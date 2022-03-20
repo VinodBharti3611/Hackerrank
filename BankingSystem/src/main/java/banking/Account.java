@@ -25,22 +25,22 @@ public abstract class Account {
 
 	public AccountHolder getAccountHolder() {
 		// complete the function
-        return null;
+        return this.accountHolder;
 	}
 
 	public boolean validatePin(int attemptedPin) {
 		// complete the function
-        return true;
+        return attemptedPin == this.pin;
 	}
 
 	public double getBalance() {
 		// complete the function
-        return -1;
+        return balance;
 	}
 
 	public Long getAccountNumber() {
 		// complete the function
-        return -1L;
+        return this.accountNumber;
 	}
 
 	public void creditAccount(double amount) {
